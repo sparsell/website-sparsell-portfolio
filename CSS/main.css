@@ -130,8 +130,23 @@ footer {
 	flex-wrap: wrap;
 	flex-direction: row;
 	width: 87.27%; /* 960px / 1100px */
+	margin-top: 5%;
 }
 
+.sample {
+	display: flex;
+	flex-direction: row;
+	border: purple 2px dotted;
+}
+figure {
+	border: 2px red solid;
+}
+
+figcaption {
+	display: flex;
+	margin: auto;
+	border: 2px greenyellow solid;
+}
 figure img {
 	  border: 12px solid #ffffff;
 	  box-shadow: 0px 0px 35px -5px rgba(0,0,0,0.46);
