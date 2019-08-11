@@ -33,26 +33,41 @@ nav {
 	background-color: #e5e9e8;
 }
 
+.navbar-items {
+	display: flex;
+	align-items: baseline;
+}
+
+.navbar-logo {
+	font-family: 'Lobster', cursive;
+	font-size: 1.6em;
+	color: #003b42;
+	padding-right: 1em;
+}
+
+#heart-icon {
+	display: flex;
+}
+
+.navbar-link-toggle {
+	display: none;
+}
+
+.nav-link-right {
+	margin-left: auto;
+}
+
 nav ul li {
 display: inline-block;
 letter-spacing: .2em;
 word-spacing: 2.5em;
+text-transform: uppercase;
 }
-
 
 nav ul li a {
-	text-decoration: none;
-	text-transform: uppercase;
-	color: #003b42;
-}
-
-.logo {
-	background-color: #e5e9e8;
-	font-family: 'Lobster', cursive;
-	font-size: 1.6em;
-	color: #003b42;
-}
-
+text-decoration: none;
+color: #003b42;	
+} 
 /***End Navigation Bar Styles**/
 
 
@@ -64,6 +79,7 @@ nav ul li a {
    flex-wrap: wrap;
    align-items: center;
 	width: 87.27%; /* 960px / 1100px */
+	min-height: 625px;
 	 color: #003b42;
 	 margin-top: 5%;
 	 margin-bottom: 5%;
@@ -87,19 +103,27 @@ nav ul li a {
 	padding-left: 10%;
 	padding-right: 10%;
 }
-
-.adjective {
-	font-family: 'Lobster', cursive;
-	font-size: 1.4em;
-	color: #003b42;
-}
-
-#greeting {
+#opener {
 	font-size: 2.25em;
 	color: #e5e9e8;
 	text-transform: uppercase;
 	font: normal'Nanum Gothic Coding', monospace;
 }
+
+h3 {
+	font-family: 'Lobster', cursive;
+	font-size: 1.4em;
+	color: #003b42;
+}
+
+.greeting p {
+	font-family: 'Open Sans', sans-serif;
+	overflow: auto;
+	max-width: 50%;
+	padding-left: 10%;
+	padding-right: 10%;	
+}
+
 /***HOME PAGE/CONTACT styles**/
 
 .contact {
@@ -133,23 +157,15 @@ footer {
 	margin-top: 5%;
 }
 
-.sample {
-	display: flex;
-	flex-direction: row;
-	border: purple 2px dotted;
-}
-figure {
-	border: 2px red solid;
-}
-
-figcaption {
-	display: flex;
-	margin: auto;
-	border: 2px greenyellow solid;
-}
 figure img {
 	  border: 12px solid #ffffff;
 	  box-shadow: 0px 0px 35px -5px rgba(0,0,0,0.46);
+}
+
+.half-width-text {
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 10%
 }
 
 .portfolio h3 {
@@ -164,7 +180,7 @@ figure img {
 }
 
 .portfolio p {
-  	font-size: .85em;
+  	font-size: .95em;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -204,3 +220,23 @@ figure img {
 
 /* Media queries for Mobile */
 /*@media (min-width: 489px)*/
+
+@media only screen and (max-width: 768px) {
+ /* .navbar-items,
+  .navbar {
+	flex-direction: column;
+	align-items: baseline;
+  }*/
+	
+  .navbar-logo {
+	  display: none;
+  }
+
+.navbar-link-right {
+	display: flex;
+	align-items: baseline;
+  }
+	
+#opener {
+	font-size: 1.5em;
+}
