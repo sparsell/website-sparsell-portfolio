@@ -17,7 +17,7 @@
 }
 
 body {
-	background-color: #83a9b2;
+
 	font: normal 100% 'Nanum Gothic Coding', monospace;
 	font-size: 16px;
 }
@@ -29,22 +29,19 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	padding: 5px 5px 5px 10px;
-	background-color: #e5e9e8;
 	width: 100%;
 }
 
-.navbar-logo {
-	font-family: 'Lobster', cursive;
-	font-size: 1.5em;
-	color: #003b42;
-	width: 30%
+
 }
 
 .navbar-list {
 }
 
 nav ul li {
-justify-content: flex-end;
+display: flex;
+	justify-content: center;
+	align-items: row;
 list-style: none;
 letter-spacing: .2em;
 word-spacing: 2.5em;
@@ -66,10 +63,19 @@ color: #003b42;
    align-items: center;
    flex-wrap: wrap;
 	 color: #003b42;
+	 background-image: url(../img/georgia-de-lotz-juQWcOiuuPE-unsplash.jpg);
+	 background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    overflow: auto;
+	opacity: 0.5;
 	 margin-top: 5%;
 	 margin-bottom: 5%;
 }
 
+
+/*
 .greeting img {
 	display: flex;
 	justify-content: center;
@@ -79,7 +85,7 @@ color: #003b42;
 	max-height: 100%;
 	box-shadow: 0px 0px 65px -5px rgba(0,0,0,0.46);
 	border: 10px white solid;
-}
+}  */
 
 .greeting h4 {
 	font-family: 'Open Sans', sans-serif;
@@ -132,7 +138,7 @@ color: #003b42;
 footer {
 	display: flex;
 	justify-content: center;
-	background-color: #025058;
+	background-color:#83a9b2;
 }
 
 /***PORTFOLIO styles**/
@@ -215,6 +221,7 @@ figcaption {
 
 .about h3 {
 	font-family: 'Lobster', cursive;
+	font-size: 1.2em;
 }
 
 #family-img {
@@ -236,9 +243,16 @@ figcaption {
 	align-items: baseline;
   }
 	
+.navbar-logo {
+	font-family: 'Lobster', cursive;
+	font-size: 1.7em;
+	color: #003b42;
+	width: 30%
+}
+/* 
   .navbar-logo {
 	  display: none;
-  }
+  } */
 	
 #opener {
 	font-size: 1.5em;
