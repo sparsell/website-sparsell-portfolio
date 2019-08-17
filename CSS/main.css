@@ -20,72 +20,66 @@ body {
 
 	font: normal 100% 'Nanum Gothic Coding', monospace;
 	font-size: 16px;
+	
 }
 
 /***Navigation Bar Styles**/
 
 .nav-container {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	padding: 5px 5px 5px 10px;
 	width: 100%;
 }
 
-
+.navbar-logo p {
+	display: none;
 }
 
 .navbar-list {
+	display: flex;
 }
 
 nav ul li {
-display: flex;
-	justify-content: center;
-	align-items: row;
+display: inline;
 list-style: none;
 letter-spacing: .2em;
 word-spacing: 2.5em;
+margin: .5em;
 text-transform: uppercase;
+
 }
 
 nav ul li a {
 text-decoration: none;
 color: #003b42;	
+padding: 10px;
+border: .5px solid #003b42;
 } 
 /***End Navigation Bar Styles**/
 
 
 /***HOME PAGE/GREETING styles**/
 
+.greeting-body {
+	background-image: url(../img/hero-sparsell-home.png);
+	 background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    overflow: auto;
+	 margin-top: 5%;
+	 margin-bottom: 5%;
+}
+
 .greeting {
 	display: flex;
 	justify-content: center;
    align-items: center;
    flex-wrap: wrap;
-	 color: #003b42;
-	 background-image: url(../img/georgia-de-lotz-juQWcOiuuPE-unsplash.jpg);
-	 background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 650px;
-    overflow: auto;
-	opacity: 0.5;
-	 margin-top: 5%;
-	 margin-bottom: 5%;
+	 color: #000000;	 
 }
-
-
-/*
-.greeting img {
-	display: flex;
-	justify-content: center;
-	width: 260px;
-	height: 390px;
-	max-width: 100%;
-	max-height: 100%;
-	box-shadow: 0px 0px 65px -5px rgba(0,0,0,0.46);
-	border: 10px white solid;
-}  */
 
 .greeting h4 {
 	font-family: 'Open Sans', sans-serif;
@@ -94,7 +88,7 @@ color: #003b42;
 	max-width: 90%;
 }
 #opener {
-	font-size: 1.75em;
+	font-size: 4.75em;
 	color: #003b42;
 	font: normal'Nanum Gothic Coding', monospace;
 }
@@ -125,7 +119,7 @@ color: #003b42;
 	display: flex;
 	justify-content: center;
 	width: 100%; /* 960px / 1100px */	
-	background-color: #025058;
+	background-color: #afa8b0;
 }
 
 .contact a {
@@ -138,7 +132,9 @@ color: #003b42;
 footer {
 	display: flex;
 	justify-content: center;
-	background-color:#83a9b2;
+	align-items: center;
+	flex-flow: column wrap;
+	background-color:#afa8b0;
 }
 
 /***PORTFOLIO styles**/
@@ -196,6 +192,9 @@ figcaption {
 }
 
 /***ABOUT styles**/
+.about-body {
+	background-color: #ffffff;
+}
 
 .about {
 	display: flex;
@@ -224,6 +223,18 @@ figcaption {
 	font-size: 1.2em;
 }
 
+.about img {
+	display: flex;
+	justify-content: center;
+	width: 260px;
+	height: 390px;
+	max-width: 100%;
+	max-height: 100%;
+	box-shadow: 0px 0px 65px -5px rgba(0,0,0,0.46);
+	border: 10px white solid;
+} 
+
+/*
 #family-img {
 
 	width: 260px;
@@ -232,7 +243,7 @@ figcaption {
 	box-shadow: 0px 0px 65px -5px rgba(0,0,0,0.46);
 	border: 10px white solid;
 	margin-top: 1.5em;
-}
+}*/
 
 /* Media queries for Mobile */
 /*@media (min-width: 489px)*/
@@ -249,10 +260,13 @@ figcaption {
 	color: #003b42;
 	width: 30%
 }
-/* 
-  .navbar-logo {
-	  display: none;
-  } */
+
+  .navbar-logo p{
+	  font-family: 'Lobster', cursive;
+	font-size: 1.7em;
+	color: #003b42;
+	width: 30% 
+  } 
 	
 #opener {
 	font-size: 1.5em;
