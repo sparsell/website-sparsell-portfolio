@@ -20,7 +20,10 @@ body {
 
 	font: normal 100% 'Nanum Gothic Coding', monospace;
 	font-size: 16px;
-	
+}
+
+ul {
+  padding: 0;
 }
 
 /***Navigation Bar Styles**/
@@ -29,26 +32,37 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 5px 5px 5px 10px;
+	padding: 5px 5px 5px 5px;
 	width: 100%;
+	margin-top: 5%;
 }
 
 .navbar-logo p {
 	display: none;
+	font-family: 'Lobster', cursive;
 }
-
+/*
 .navbar-list {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+}*/
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row nowrap;
 }
 
 nav ul li {
-display: inline;
+/*display: inline;*/
 list-style: none;
 letter-spacing: .2em;
 word-spacing: 2.5em;
 margin: .5em;
 text-transform: uppercase;
-
 }
 
 nav ul li a {
@@ -61,7 +75,7 @@ border: .5px solid #003b42;
 
 
 /***HOME PAGE/GREETING styles**/
-
+/*
 .greeting-body {
 	background-image: url(../img/hero-sparsell-home.png);
 	 background-position: center;
@@ -69,16 +83,20 @@ border: .5px solid #003b42;
     background-size: cover;
     height: auto;
     overflow: auto;
-	 margin-top: 5%;
-	 margin-bottom: 5%;
-}
+}*/
 
 .greeting {
 	display: flex;
 	justify-content: center;
    align-items: center;
    flex-wrap: wrap;
-	 color: #000000;	 
+	 color: #000000;
+	 background-image: url(../img/hero-sparsell-home.png);
+	 background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    overflow: auto;	 
 }
 
 .greeting h4 {
@@ -89,7 +107,7 @@ border: .5px solid #003b42;
 }
 #opener {
 	font-size: 4.75em;
-	color: #003b42;
+	color: #011c1f;
 	font: normal'Nanum Gothic Coding', monospace;
 }
 
@@ -109,6 +127,8 @@ border: .5px solid #003b42;
 	padding: 5px 25px 5px 25px;
 	color: #003b42;
 	font-family: 'Open Sans', sans-serif;
+
+	
 	
 }
 
@@ -135,7 +155,11 @@ footer {
 	align-items: center;
 	flex-flow: column wrap;
 	background-color:#afa8b0;
+	font-size: .8em;
 }
+#photo-cred {
+		font-size: .5em;
+	}
 
 /***PORTFOLIO styles**/
 
@@ -214,6 +238,8 @@ figcaption {
 		width: 85%;
 	line-height: 1.25em;
 	padding: 5px 25px 5px 25px;
+	margin-top: ..4125em;
+	margin-bottom: .4125em;
 	color: #003b42;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -223,6 +249,10 @@ figcaption {
 	font-size: 1.2em;
 }
 
+.signature {
+	font-family: 'Lobster', cursive;
+	font-size: 1.2em;
+}
 .about img {
 	display: flex;
 	justify-content: center;
@@ -269,8 +299,10 @@ figcaption {
   } 
 	
 #opener {
-	font-size: 1.5em;
+	font-size: 3em;
 }
+
+
 }
 
 @media only screen and (min-width: 1200px) {
