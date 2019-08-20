@@ -1,0 +1,231 @@
+@font-face{
+	font-family: 'Wisdom Script';
+	src: url('../fonts/wisdom-script.otf') format('opentype');
+}
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	max-width: 1200px;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 2.14285714em;
+}
+h2 {
+    font-size: 1.71428571em;
+}
+h3 {
+	font-size: 1.28571429em;
+}
+h4 {
+	font-size: .85714286em;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.5em;
+    padding: 0 2.14em;
+}
+
+ul {
+	margin: 0;
+}
+
+/*The widths are in a percentage!*/
+header {
+    text-align: center;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+header h1 {
+	padding: 38px 20px 20px 20px;
+	width: 100%;
+	padding: 38px 0 20px 20px;
+}
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	padding: 20px 0; 
+    width: 100%;
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+	line-height: 2.2em;
+
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 0 10px;
+	list-style: none;
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+.main-image {
+	height: auto;
+}
+
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+	border-top: 3px solid #77a466;
+}
+
+.main-title {
+	height: auto;
+	float: left;
+	padding-left: 10px;
+}
+.main-title h3 {
+	text-align: left;
+	padding: 10px;
+	color: #77a466;
+}
+.main-title p {
+	padding: 10px;
+	font-size: 1em;
+	line-height: 1.5625em;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	width: 100%;
+	border-top: 1px solid #eee;
+}
+
+.section-one h4 {
+	padding: 10px 30px;
+}
+
+.section-two h4,
+.section-three h4 {
+	padding: 10px 30px;
+}
+
+.menu {
+	list-style: none;
+	padding: 0px;
+}
+.menu li {
+	padding: 10px 30px;
+	color:#77a466;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 1.3125em;
+}
+
+.address {
+	font-size: 1em;
+	line-height: 1.5625em;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	border-top: 3px solid #eee;
+	text-align: center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+footer span {
+	font-family: 'Wisdom Script', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: .875em;
+}
+
+
+/* Tablet styles **/
+
+@media all and (min-width: 768px) {
+.bottom-section {
+	justify-content: space-between;
+	align-items: flex-start;
+	border-top: 1px solid #eee;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	flex-basis: 30%;
+	border-top: none;
+}
+
+.section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	padding: 0 20px;
+}
+}
+
+/** Desktop styles **/
+
+@media all and (min-width: 1200px)	 {
+
+header {
+	justify-content: space-between;
+}
+	header h1 {
+		
+		width: 30%;
+		margin: 0;
+		border-bottom: none;	
+	}
+
+	header nav {
+	width: 40%;
+} 
+
+header nav ul {
+	display: flex;
+	justify-content: space-between;
+}
+}

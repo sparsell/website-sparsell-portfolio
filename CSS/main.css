@@ -32,9 +32,10 @@ ul {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 5px 5px 5px 5px;
+	padding: 15px 5px 15px 5px;
 	width: 100%;
-	margin-top: 5%;
+	background-image: url(../img/fabric_of_squares_gray.png);
+    background-repeat: repeat; 
 }
 
 .navbar-logo p {
@@ -122,14 +123,12 @@ border: .5px solid #003b42;
 	justify-content: space-around;
    align-items: center;
    font-size: 1.25em;
+   font-weight: bolder;
 	width: 85%;
 	line-height: 1.25em;
 	padding: 5px 25px 5px 25px;
 	color: #003b42;
 	font-family: 'Open Sans', sans-serif;
-
-	
-	
 }
 
 
@@ -139,7 +138,7 @@ border: .5px solid #003b42;
 	display: flex;
 	justify-content: center;
 	width: 100%; /* 960px / 1100px */	
-	background-color: #afa8b0;
+	background-color: #93aaa2;
 }
 
 .contact a {
@@ -154,7 +153,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	flex-flow: column wrap;
-	background-color:#afa8b0;
+	background-color:#93aaa2;
 	font-size: .8em;
 }
 #photo-cred {
@@ -171,32 +170,41 @@ footer {
 	 color: #003b42;
 	 margin-top: 5%;
 	 margin-bottom: 5%;
-	 width: 100%;
+	 
 }
 
 figure img {
-	  border: 12px solid #ffffff;
-	  box-shadow: 0px 0px 35px -5px rgba(0,0,0,0.46);
+	border: 8px solid #ffffff;
 	  width: 260px;
+	  height: 200px;
 	max-width: 100%;
 	max-height: 100%;
-	box-shadow: 0px 0px 65px -5px rgba(0,0,0,0.46);
-	border: 10px white solid;
+	box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.46);
 	margin-top: 1.5em;
 }
 
 .portfolio h3 {
 	font-size: 1.3em;
+	color: #011c1f;
 	width: 85%;
 	padding: 5px 25px 5px 25px;
-	text-decoration: underline;
 	text-align: center;
+}
+
+.sample {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	border-bottom: .5px dashed #93aaa2;
+	width: 90%;
+	margin-bottom: .3125em;
 }
 
 .sample h4 {
 	justify-content: center;
+	align-items: center;
 	font-size: 1.1em;
-	width: 85%;
 	padding: 5px 25px 5px 25px;
 	margin-bottom: 0;
 	text-transform: uppercase;
@@ -235,10 +243,10 @@ figcaption {
 	justify-content: space-around;
    align-items: center;
    font-size: 1.25em;
-		width: 85%;
+	width: 85%;
 	line-height: 1.25em;
 	padding: 5px 25px 5px 25px;
-	margin-top: ..4125em;
+	margin-top: .4125em;
 	margin-bottom: .4125em;
 	color: #003b42;
 	font-family: 'Open Sans', sans-serif;
@@ -246,7 +254,7 @@ figcaption {
 
 .about h3 {
 	font-family: 'Lobster', cursive;
-	font-size: 1.2em;
+	font-size: 1.4em;
 }
 
 .signature {
@@ -260,8 +268,9 @@ figcaption {
 	height: 390px;
 	max-width: 100%;
 	max-height: 100%;
-	box-shadow: 0px 0px 65px -5px rgba(0,0,0,0.46);
+	box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.46);
 	border: 10px white solid;
+	margin: .8125em .4125em;
 } 
 
 /*
