@@ -76,12 +76,12 @@ border: .5px solid #003b42;
 	 background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
+    height: 100%;
     overflow: auto;	 
 }
 
 #opener {
-	font-size: 4.75em;
+	font-size: 3.75em;
 	color: #011c1f;
 	font: normal'Nanum Gothic Coding', monospace;
 }
@@ -283,6 +283,10 @@ figcaption {
 	font-size: 1.7em;
 	color: #003b42;
 }
+
+#opener {
+	font-size: 4.75em;
+
 
 .greeting h4 {
 	display: flex;
