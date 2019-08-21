@@ -1,13 +1,9 @@
 
- /****  
-    font-family: 'Nanum Gothic Coding', monospace;
-	font-family: 'Special Elite', cursive;
+ /* 
 	font-family: 'Nanum Gothic', sans-serif;
 	font-family: 'Open Sans', sans-serif;
-	font-family: 'Buda', cursive;
-	font-family: 'Overlock SC', cursive;
 	font-family: 'Lobster', cursive;
-***/
+*/
 
 
 /**Base Styles**/
@@ -18,7 +14,7 @@
 
 body {
 
-	font: normal 100% 'Nanum Gothic Coding', monospace;
+	font: normal 100% 'Open Sans', sans-serif;
 	font-size: 16px;
 }
 
@@ -32,23 +28,16 @@ ul {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 15px 5px 15px 5px;
+	padding: 1em;
 	width: 100%;
 	background-image: url(../img/fabric_of_squares_gray.png);
     background-repeat: repeat; 
 }
 
 .navbar-logo p {
-	display: none;
+
 	font-family: 'Lobster', cursive;
 }
-/*
-.navbar-list {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column wrap;
-}*/
 
 nav ul {
 	display: flex;
@@ -58,7 +47,6 @@ nav ul {
 }
 
 nav ul li {
-/*display: inline;*/
 list-style: none;
 letter-spacing: .2em;
 word-spacing: 2.5em;
@@ -76,15 +64,7 @@ border: .5px solid #003b42;
 
 
 /***HOME PAGE/GREETING styles**/
-/*
-.greeting-body {
-	background-image: url(../img/hero-sparsell-home.png);
-	 background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
-    overflow: auto;
-}*/
+
 
 .greeting {
 	display: flex;
@@ -100,19 +80,24 @@ border: .5px solid #003b42;
     overflow: auto;	 
 }
 
-.greeting h4 {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.25em;
-	overflow: auto;
-	max-width: 90%;
-}
 #opener {
 	font-size: 4.75em;
 	color: #011c1f;
 	font: normal'Nanum Gothic Coding', monospace;
 }
 
+.greeting h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.25em;
+	overflow: auto;
+	max-width: 90%;
+}
+
 .greeting h3 {
+	display: flex;
+	justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
 	font-family: 'Lobster', cursive;
 	font-size: 1.4em;
 	color: #003b42;
@@ -120,7 +105,7 @@ border: .5px solid #003b42;
 
 .greeting p {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
    align-items: center;
    font-size: 1.25em;
    font-weight: bolder;
@@ -132,7 +117,7 @@ border: .5px solid #003b42;
 }
 
 
-/***HOME PAGE/CONTACT styles**/
+/* HOME PAGE/CONTACT styles */
 
 .contact {
 	display: flex;
@@ -146,7 +131,7 @@ border: .5px solid #003b42;
 }
 
 
-/***FOOTER Styles**/
+/* FOOTER Styles */
 
 footer {
 	display: flex;
@@ -157,10 +142,57 @@ footer {
 	font-size: .8em;
 }
 #photo-cred {
-		font-size: .5em;
+		font-size: .75em;
 	}
 
-/***PORTFOLIO styles**/
+/* ABOUT page styles */
+.about-body {
+	background-color: #ffffff;
+}
+
+.about {
+	display: flex;
+	justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+	 color: #003b42;
+	 margin-top: 5%;
+	 margin-bottom: 5%;
+}
+
+.about p {
+	display: flex;
+	justify-content: space-around;
+   align-items: center;
+   font-size: 1.25em;
+	width: 85%;
+	line-height: 1.25em;
+	padding: 5px 25px 5px 25px;
+	margin-top: .4125em;
+	margin-bottom: .4125em;
+	color: #003b42;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.about h3,
+.signature {
+	font-family: 'Lobster', cursive;
+	font-size: 1.4em;
+}
+
+.about img {
+	display: flex;
+	justify-content: center;
+	width: 260px;
+	height: 390px;
+	max-width: 100%;
+	max-height: 100%;
+	box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.46);
+	border: 10px white solid;
+	margin: .8125em .4125em;
+} 
+
+/* WORK page styles */
 
 .portfolio  {
 	display: flex;
@@ -184,11 +216,13 @@ figure img {
 }
 
 .portfolio h3 {
+	font-family: 'Nanum Gothic', sans-serif;
 	font-size: 1.3em;
 	color: #011c1f;
 	width: 85%;
 	padding: 5px 25px 5px 25px;
 	text-align: center;
+	border-bottom: 2px solid #011c1f;
 }
 
 .sample {
@@ -223,94 +257,54 @@ figcaption {
 	font-family: 'Open Sans', sans-serif;
 }
 
-/***ABOUT styles**/
-.about-body {
-	background-color: #ffffff;
-}
 
-.about {
-	display: flex;
-	justify-content: center;
-   align-items: center;
-   flex-wrap: wrap;
-	 color: #003b42;
-	 margin-top: 5%;
-	 margin-bottom: 5%;
-}
 
-.about p {
-	display: flex;
-	justify-content: space-around;
-   align-items: center;
-   font-size: 1.25em;
-	width: 85%;
-	line-height: 1.25em;
-	padding: 5px 25px 5px 25px;
-	margin-top: .4125em;
-	margin-bottom: .4125em;
-	color: #003b42;
-	font-family: 'Open Sans', sans-serif;
-}
-
-.about h3 {
-	font-family: 'Lobster', cursive;
-	font-size: 1.4em;
-}
-
-.signature {
-	font-family: 'Lobster', cursive;
-	font-size: 1.2em;
-}
-.about img {
-	display: flex;
-	justify-content: center;
-	width: 260px;
-	height: 390px;
-	max-width: 100%;
-	max-height: 100%;
-	box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.46);
-	border: 10px white solid;
-	margin: .8125em .4125em;
-} 
-
-/*
-#family-img {
-
-	width: 260px;
-	max-width: 100%;
-	max-height: 100%;
-	box-shadow: 0px 0px 65px -5px rgba(0,0,0,0.46);
-	border: 10px white solid;
-	margin-top: 1.5em;
-}*/
 
 /* Media queries for Mobile */
-/*@media (min-width: 489px)*/
+
+@media (max-width: 489px) {
+.navbar-logo p {
+	display: none;
+}
+}
+
+/* Media queries for Tablets */
 
 @media only screen and (min-width: 768px) {
- .navbar-items,
-  .navbar {
-	align-items: baseline;
+ .nav-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
   }
 	
-.navbar-logo {
+.navbar-logo p {
+	display: inline;
 	font-family: 'Lobster', cursive;
 	font-size: 1.7em;
 	color: #003b42;
-	width: 30%
 }
 
-  .navbar-logo p{
-	  font-family: 'Lobster', cursive;
-	font-size: 1.7em;
-	color: #003b42;
-	width: 30% 
-  } 
-	
-#opener {
-	font-size: 3em;
+.greeting h4 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
+/* ABOUT page styles */
+.about {
+	display: inline;
+}
+
+/* WORK page styles */
+.sample {
+	justify-content: center;
+	align-items: flex-start;
+	flex-flow: row wrap;
+	flex-basis: 1 0 30%;
+	max-width: 30%;
+	border: none;
+}
 
 }
 
