@@ -30,8 +30,7 @@ ul {
 	align-items: center;
 	padding: 1em;
 	width: 100%;
-	background-image: url(../img/fabric_of_squares_gray.png);
-    background-repeat: repeat; 
+	background: url(../img/fabric_of_squares_gray.png) repeat;
 }
 
 .navbar-logo p {
@@ -76,8 +75,8 @@ border: .5px solid #003b42;
 	 background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    overflow: auto;	 
+	height: 100%;
+    overflow: auto;
 }
 
 #opener {
@@ -93,16 +92,6 @@ border: .5px solid #003b42;
 	max-width: 90%;
 }
 
-.greeting h3 {
-	display: flex;
-	justify-content: center;
-   align-items: center;
-   flex-wrap: wrap;
-	font-family: 'Lobster', cursive;
-	font-size: 1.4em;
-	color: #003b42;
-}
-
 .greeting p {
 	display: flex;
 	justify-content: center;
@@ -115,6 +104,19 @@ border: .5px solid #003b42;
 	color: #003b42;
 	font-family: 'Open Sans', sans-serif;
 }
+
+
+.greeting h3 {
+	display: flex;
+	justify-content: center;
+   align-items: center;
+   width: 85%;
+	font-family: 'Lobster', cursive;
+	font-size: 1.4em;
+	color: #003b42;
+}
+
+
 
 
 /* HOME PAGE/CONTACT styles */
@@ -151,19 +153,32 @@ footer {
 }
 
 .about {
-	display: flex;
-	justify-content: center;
-   align-items: center;
-   flex-wrap: wrap;
 	 color: #003b42;
 	 margin-top: 5%;
 	 margin-bottom: 5%;
 }
 
-.about p {
+.wrapper {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: column nowrap;
+}
+
+.about h3,
+.signature {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	flex-direction: column wrap;
+	font-family: 'Lobster', cursive;
+	font-size: 1.4em;
+}
+
+.wrapper p {
+	display: flex; 
+	/*justify-content: space-around;*/
    align-items: center;
+   flex-basis: 40%; 
    font-size: 1.25em;
 	width: 85%;
 	line-height: 1.25em;
@@ -172,12 +187,6 @@ footer {
 	margin-bottom: .4125em;
 	color: #003b42;
 	font-family: 'Open Sans', sans-serif;
-}
-
-.about h3,
-.signature {
-	font-family: 'Lobster', cursive;
-	font-size: 1.4em;
 }
 
 .about img {
@@ -192,6 +201,9 @@ footer {
 	margin: .8125em .4125em;
 } 
 
+.about span {
+	display: inline;
+}
 /* WORK page styles */
 
 .portfolio  {
@@ -286,7 +298,14 @@ figcaption {
 
 #opener {
 	font-size: 4.75em;
+}
 
+.greeting {
+	width: 85%;
+	/*height: 950px;*/
+	background-size: cover;
+	flex-flow: column nowrap;
+}
 
 .greeting h4 {
 	display: flex;
@@ -296,9 +315,8 @@ figcaption {
 }
 
 /* ABOUT page styles */
-.about {
-	display: inline;
-}
+
+
 
 /* WORK page styles */
 .sample {
@@ -313,5 +331,13 @@ figcaption {
 }
 
 @media only screen and (min-width: 1200px) {
+
+.greeting {
+	height: 600px;
+}
+
+.greeting h3 {
+	
+}
 
 }
