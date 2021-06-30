@@ -71,12 +71,12 @@ border: .5px solid #003b42;
    align-items: center;
    flex-wrap: wrap;
 	 color: #000000;
-	 background-image: url(../img/hero-sparsell-home.png);
+	 /* background-image: url(../img/hero-sparsell-home.png); */
 	 background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-	height: 100%;
-    overflow: auto;
+	height: 100%; */
+    /* /* overflow: auto; */
 }
 
 #opener {
@@ -278,6 +278,10 @@ figcaption {
 .navbar-logo p {
 	display: none;
 }
+
+.greeting h4 {
+    height: 700px;
+}
 }
 
 /* Media queries for Tablets */
@@ -302,7 +306,8 @@ figcaption {
 
 .greeting {
 	width: 85%;
-	/*height: 950px;*/
+	/* height: 950px; */
+    height: 100%;
 	background-size: cover;
 	flex-flow: column nowrap;
 }
@@ -334,5 +339,6 @@ figcaption {
 
 .greeting {
 	height: 700px;
+    /* height: 100%; */
 	width: 100%;
 }
